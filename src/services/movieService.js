@@ -19,7 +19,8 @@ function saveDB(movies) {
 export const movieService = {
     
     getAll() {
-        return loadDB()
+        const dataMovies = loadDB()
+        return dataMovies.movies
     },
 
     findById(id){

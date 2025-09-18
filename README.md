@@ -24,6 +24,6 @@ JS Back-end Movie Magic Workshop
 - [X] Load the data from the json
 - [X] Add save db function
 - [X] Add movie service
-- [ ] Render movies on home page
-- [ ] Show no movies screen
+- [X] Render movies on home page
+- [X] Show no movies screen
   
