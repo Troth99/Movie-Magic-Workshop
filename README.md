@@ -26,4 +26,13 @@ JS Back-end Movie Magic Workshop
 - [X] Add movie service
 - [X] Render movies on home page
 - [X] Show no movies screen
+---
+
+### Create Movies
+- [X] Add Movie Controller
+- [ ] Add routes
+- [ ] Show create movie page
+- [ ] Read body data from the server
+- [ ] Add action for creating movie
+- [ ] Add model method
   
