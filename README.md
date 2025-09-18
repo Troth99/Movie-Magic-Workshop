@@ -9,4 +9,4 @@ JS Back-end Movie Magic Workshop
 ✅ Add Workshop Resources 
 ✅ Configure Route Handlers `npm i  express-handlebars` 
 ✅ Setup static files
-⬜ Render Home Page 
+✅ Render Home Page 
