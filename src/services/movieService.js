@@ -1,3 +1,4 @@
+import { readFileSync } from "fs";
 import Movie from "../models/Movie.js"
 
 import path from "path"
@@ -5,12 +6,23 @@ import path from "path"
 const DB_PATH = path.resolve('src/data/db.json');
 
 
-
-function getAll() {
-    return Movie.find()
+function loadDB() {
+    const file = readFileSync(DB_PATH, 'utf8');
+    return JSON.parse(file)
 }
 
 
-export default {
-    getAll,
+
+export const movieService = {
+    
+    getAll() {
+        return loadDB()
+    },
+
+    findById(id){
+        return
+    }
 }
+
+
+
