@@ -4,6 +4,7 @@ JS Back-end Movie Magic Workshop
 
 ## 🚀 Development Steps
 
+### Setup
 - [X] Init Project
 - [X] Setup Express Server `npm i express`
 - [X] Add Workshop Resources
@@ -13,5 +14,13 @@ JS Back-end Movie Magic Workshop
 - [X] Render Home Page
 - [X] Add Layout
 - [X] Render About Page
----
 - 
+### Architecture
+
+- [X] Add home controller
+- [ ] Add routes
+- [ ] Add movie data layer 
+- [ ] Add movie service
+- [ ] Render movies on home page
+- [ ] Show no movies screen
+  
