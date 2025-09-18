@@ -4,12 +4,14 @@ JS Back-end Movie Magic Workshop
 
 ## 🚀 Development Steps
 
-✅ Init Project
-✅ Setup Express Server `npm i express`
-✅ Add Workshop Resources 
-✅ Config debuging
-✅ Configure Route Handlers `npm i  express-handlebars` 
-✅ Setup static files
-✅ Render Home Page 
-✅ Add Layout
-✅ Render About Page 
+- [X] Init Project
+- [X] Setup Express Server `npm i express`
+- [X] Add Workshop Resources
+- [X] Config debugging
+- [X] Configure Route Handlers `npm i express-handlebars`
+- [X] Setup static files
+- [X] Render Home Page
+- [X] Add Layout
+- [X] Render About Page
+---
+- 
