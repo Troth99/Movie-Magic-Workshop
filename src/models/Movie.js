@@ -1,5 +1,5 @@
  
-import data from "./data/db.json" assert {type: "json"};
+
 
  class Movie {
 
