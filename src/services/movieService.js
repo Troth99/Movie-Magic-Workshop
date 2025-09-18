@@ -1,4 +1,4 @@
-import { readFileSync } from "fs";
+import { readFileSync, writeFileSync } from "fs";
 import Movie from "../models/Movie.js"
 
 import path from "path"
@@ -12,6 +12,9 @@ function loadDB() {
 }
 
 
+function saveDB(movies) {
+    writeFileSync(DB_PATH, JSON.stringify({movies}, null, 2), 'utf8')
+}
 
 export const movieService = {
     

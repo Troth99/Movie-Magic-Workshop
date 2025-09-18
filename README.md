@@ -22,6 +22,7 @@ JS Back-end Movie Magic Workshop
 - [X] Add movie data layer 
 - [X] Add DB path in the service
 - [X] Load the data from the json
+- [X] Add save db function
 - [ ] Add movie service
 - [ ] Render movies on home page
 - [ ] Show no movies screen
