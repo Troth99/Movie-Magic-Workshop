@@ -1,0 +1,14 @@
+{
+  "name": "movie-magic-workshop",
+  "version": "1.0.0",
+  "description": "JS Back-end Movie Magic Workshop",
+  "main": "index.js",
+  "scripts": {
+    "start": "node src/injdex.js",
+    "dev": "node --watch src/indexjs"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module"
+}
