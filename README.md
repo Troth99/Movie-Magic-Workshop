@@ -11,3 +11,5 @@ JS Back-end Movie Magic Workshop
 ✅ Configure Route Handlers `npm i  express-handlebars` 
 ✅ Setup static files
 ✅ Render Home Page 
+✅ Add Layout
+✅ Render About Page 

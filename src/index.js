@@ -18,7 +18,7 @@ app.use(express.static('src/public'))
 //routes
 app.get('/', (req, res) => {
 
-    res.render('home', {layout: false})
+    res.render('home')
 });
 
 
