@@ -18,7 +18,7 @@ JS Back-end Movie Magic Workshop
 ### Architecture
 
 - [X] Add home controller
-- [ ] Add routes
+- [X] Add routes
 - [ ] Add movie data layer 
 - [ ] Add movie service
 - [ ] Render movies on home page
