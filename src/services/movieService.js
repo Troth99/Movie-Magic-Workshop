@@ -28,8 +28,16 @@ export const movieService = {
     },
 
     create(movieData) {
+        const db = loadDB()
 
-        console.log(movieData)
+        const movie = new Movie(movieData);
+
+        db.movies.push(movie)
+
+        saveDB(db.movies)
+
+        return movie
+        
     }
 
     
