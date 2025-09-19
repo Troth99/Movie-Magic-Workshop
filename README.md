@@ -14,7 +14,6 @@ JS Back-end Movie Magic Workshop
 - [X] Render Home Page
 - [X] Add Layout
 - [X] Render About Page
-- 
 ### Architecture
 
 - [X] Add home controller
@@ -32,7 +31,7 @@ JS Back-end Movie Magic Workshop
 - [X] Add Movie Controller
 - [X] Show create movie page
 - [X] Add routes
-- [ ] Read body data from the server
+- [X] Read body data from the server
 - [ ] Add action for creating movie
 - [ ] Add model method
   
