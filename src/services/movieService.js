@@ -25,7 +25,14 @@ export const movieService = {
 
     findById(id){
         return
+    },
+
+    create(movieData) {
+
+        console.log(movieData)
     }
+
+    
 }
 
 
