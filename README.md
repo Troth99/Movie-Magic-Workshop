@@ -32,6 +32,7 @@ JS Back-end Movie Magic Workshop
 - [X] Show create movie page
 - [X] Add routes
 - [X] Read body data from the server
-- [ ] Add action for creating movie
+- [X] Add action for creating movie
+- [ ] Add movie service for creating movies
 - [ ] Add model method
   
