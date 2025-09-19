@@ -15,7 +15,7 @@ movieController.post('/movie/create', (req, res) => {
 
     movieService.create(movieData)
     
-    res.end()
+    res.redirect('/')
 
 })
 
