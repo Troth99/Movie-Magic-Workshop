@@ -7,20 +7,25 @@ const movieController = Router();
 
 movieController.get('/movie/create', (req, res) => {
     res.render('create')
-} );
+});
 
 movieController.post('/movie/create', (req, res) => {
-   
+
     const movieData = req.body;
 
     movieService.create(movieData)
-    
+
     res.redirect('/')
 
 })
 
 movieController.get('/search', (req, res) => {
-    res.render('search')
+
+    const movies = movieService.getAll();
+
+    console.log(movies)
+
+    res.render('search', { movies })
 })
 
 export default movieController;

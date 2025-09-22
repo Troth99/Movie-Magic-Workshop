@@ -41,4 +41,8 @@ JS Back-end Movie Magic Workshop
 
 ### Search
 - [X] Show static search
+- [X] Render all movies
+- [X] Modify seach form
+- [ ] Filter movies
+- [ ] Remember seach words
   
