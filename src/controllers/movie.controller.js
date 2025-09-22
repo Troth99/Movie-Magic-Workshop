@@ -19,5 +19,9 @@ movieController.post('/movie/create', (req, res) => {
 
 })
 
+movieController.get('/search', (req, res) => {
+    res.render('search')
+})
+
 export default movieController;
 

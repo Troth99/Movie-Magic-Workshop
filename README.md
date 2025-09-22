@@ -37,4 +37,8 @@ JS Back-end Movie Magic Workshop
 - [X] Add model method
 - [X] Added service to save created movie in the DB
 - [X] Redirect after creation
+
+
+### Search
+- [X] Show static search
   

@@ -9,4 +9,5 @@ const routes = Router()
 routes.use(homeController)
 routes.use(movieController)
 
+
 export default routes
