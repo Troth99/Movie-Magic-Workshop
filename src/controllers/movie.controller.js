@@ -20,12 +20,12 @@ movieController.post('/movie/create', (req, res) => {
 })
 
 movieController.get('/search', (req, res) => {
+    const filter = req.query
 
-    const movies = movieService.getAll();
+    const movies = movieService.filter(filter);
 
-    console.log(movies)
 
-    res.render('search', { movies })
+    res.render('search', { movies, ...filter })
 })
 
 export default movieController;

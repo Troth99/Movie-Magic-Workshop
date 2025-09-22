@@ -38,6 +38,25 @@ export const movieService = {
 
         return movie
         
+    },
+
+
+    filter(filter) {
+        let movie = this.getAll();
+
+        if(filter.title){
+            movie = movie.filter(m => m.title.toLowerCase().includes(filter.title.toLowerCase()))
+        }
+
+        if(filter.genre) {
+            movie = movie.filter(m => m.genre.toLowerCase().includes(filter.genre.toLowerCase()))
+        }
+
+        if(filter.year) {
+            movie = movie.filter(m => m.year === filter.year)
+        }
+        
+        return movie
     }
 
     

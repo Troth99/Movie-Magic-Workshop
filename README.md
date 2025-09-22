@@ -43,6 +43,6 @@ JS Back-end Movie Magic Workshop
 - [X] Show static search
 - [X] Render all movies
 - [X] Modify seach form
-- [ ] Filter movies
+- [X] Filter movies
 - [ ] Remember seach words
   
