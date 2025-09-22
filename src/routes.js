@@ -8,6 +8,8 @@ const routes = Router()
 
 routes.use(homeController)
 routes.use(movieController)
-
+routes.use((req, res) => {
+    res.status(404).render('404');
+})
 
 export default routes

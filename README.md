@@ -38,11 +38,21 @@ JS Back-end Movie Magic Workshop
 - [X] Added service to save created movie in the DB
 - [X] Redirect after creation
 
-
 ### Search
 - [X] Show static search
 - [X] Render all movies
 - [X] Modify seach form
 - [X] Filter movies
-- [ ] Remember seach words
+- [X] Remember seach words
+
+### Movie details
+- [ ] Add details controller
+- [ ] Add routes
+- [ ] Add movie service for getting movie by id
+- [ ] Find movie by id from model
+- [ ] Render movie details page
+
+
+### Bonuses
+-[X] Page 404
   
