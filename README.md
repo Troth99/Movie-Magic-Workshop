@@ -45,14 +45,16 @@ JS Back-end Movie Magic Workshop
 - [X] Filter movies
 - [X] Remember seach words
 
-### Movie details
-- [ ] Add details controller
-- [ ] Add routes
-- [ ] Add movie service for getting movie by id
-- [ ] Find movie by id from model
-- [ ] Render movie details page
-
-
 ### Bonuses
 -[X] Page 404
+
+
+### Wokshop 2 - Expess and MongoDB
+- [X] Install mongoose `npm i mongoose`
+- [] Connect to MongoDB
+- [] Add Movie Model
+- [] Add Movie Service
+- [] Add Movie Controller
+- [] Render Movies on Home Page
+- [] Create Movie Page
   
