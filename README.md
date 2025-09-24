@@ -51,10 +51,13 @@ JS Back-end Movie Magic Workshop
 
 ### Wokshop 2 - Expess and MongoDB
 - [X] Install mongoose `npm i mongoose`
-- [] Connect to MongoDB
+- [X] Connect to MongoDB
 - [] Add Movie Model
 - [] Add Movie Service
 - [] Add Movie Controller
 - [] Render Movies on Home Page
 - [] Create Movie Page
   
+
+  ### Bonuses
+    - [] envirment variables
