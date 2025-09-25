@@ -14,16 +14,18 @@ function loadDB() {
 
 
 function saveDB(movies) {
-    writeFileSync(DB_PATH, JSON.stringify({movies}, null, 2), 'utf8')
+    writeFileSync(DB_PATH, JSON.stringify({ movies }, null, 2), 'utf8')
 }
 
 export const movieService = {
-    
-    getAll() {
-       return Movie.find()
+
+    async getAll(filter) {
+        const result = await Movie.find(filter).lean()
+
+        return result
     },
 
-    findById(id){
+    findById(id) {
         return
     },
 
@@ -37,29 +39,29 @@ export const movieService = {
         saveDB(db.movies)
 
         return movie
-        
+
     },
 
 
     filter(filter) {
         let movie = this.getAll();
 
-        if(filter.title){
+        if (filter.title) {
             movie = movie.filter(m => m.title.toLowerCase().includes(filter.title.toLowerCase()))
         }
 
-        if(filter.genre) {
+        if (filter.genre) {
             movie = movie.filter(m => m.genre.toLowerCase().includes(filter.genre.toLowerCase()))
         }
 
-        if(filter.year) {
+        if (filter.year) {
             movie = movie.filter(m => m.year === filter.year)
         }
-        
+
         return movie
     }
 
-    
+
 }
 
 
