@@ -1,7 +1,8 @@
 import { readFileSync, writeFileSync } from "fs";
-import Movie from "../models/Movie.js"
+
 
 import path from "path"
+import Movie from "../models/Movie.model.js";
 
 const DB_PATH = path.resolve('src/data/db.json');
 
@@ -19,8 +20,7 @@ function saveDB(movies) {
 export const movieService = {
     
     getAll() {
-        const dataMovies = loadDB()
-        return dataMovies.movies
+       return Movie.find()
     },
 
     findById(id){

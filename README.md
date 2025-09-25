@@ -59,7 +59,9 @@ JS Back-end Movie Magic Workshop
 - [x] Install mongoose `npm i mongoose`
 - [x] Connect to MongoDB
 - [x] Add Movie Model
-- [] Add Movie Service
+- [X] Add Movie Service
+- [X] Refactor Home Controller to use Movie Service
+- [X] Refactor Movie Service to use Movie Model
 - [] Add Movie Controller
 - [] Render Movies on Home Page
 - [] Create Movie Page
