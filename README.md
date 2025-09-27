@@ -63,6 +63,7 @@ JS Back-end Movie Magic Workshop
 - [X] Refactor Home Controller to use Movie Service
 - [X] Refactor Movie Service to use Movie Model
 - [X] Fixed create movie to use Movie Service
+- [X] Added details page
 - [] Add Movie Controller
 - [] Render Movies on Home Page
 - [] Create Movie Page

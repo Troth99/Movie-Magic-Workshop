@@ -24,8 +24,21 @@ movieController.get('/search', (req, res) => {
 
     const movies = movieService.filter(filter);
 
-
     res.render('search', { movies, ...filter })
+})
+
+movieController.get('/movies/:movieId/details', async (req, res) => {
+    const movieId = req.params.movieId
+    
+    const movie = await movieService.findById(movieId).lean();
+
+    const ratingViewData = 
+
+    console.log(movie)
+
+    res.render('details', {movie})
+
+    
 })
 
 export default movieController;

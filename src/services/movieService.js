@@ -19,8 +19,8 @@ export const movieService = {
         return result
     },
 
-    findById(id) {
-        return
+    findById(movieId) {
+        return Movie.findById(movieId)
     },
 
    async create(movieData) {
