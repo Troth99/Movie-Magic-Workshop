@@ -32,11 +32,9 @@ movieController.get('/movies/:movieId/details', async (req, res) => {
     
     const movie = await movieService.findById(movieId).lean();
 
-    const ratingViewData = 
-
-    console.log(movie)
-
-    res.render('details', {movie})
+    const ratingViewData = '&#x2605'.repeat(Math.trunc(movie.rating))
+    
+    res.render('details', {movie, rating: ratingViewData})
 
     
 })

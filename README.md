@@ -71,3 +71,4 @@ JS Back-end Movie Magic Workshop
   ### Bonuses
 
   - [] envirment variables
+  - [X] Fix the movie rating
