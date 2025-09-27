@@ -13,9 +13,9 @@ const url = 'mongodb://localhost:27017'
 
 try {
     await mongoose.connect(url, {
-        dbName: 'movie-magic-2025'
+        dbName: 'movie-magic-2025',
     })
-    
+
     console.log('Connected to DB!')
 } catch (error) {
     console.error('Cannot connect to DB', error.message)

@@ -7,12 +7,6 @@ import Movie from "../models/Movie.model.js";
 const DB_PATH = path.resolve('src/data/db.json');
 
 
-function loadDB() {
-    const file = readFileSync(DB_PATH, 'utf8');
-    return JSON.parse(file)
-}
-
-
 function saveDB(movies) {
     writeFileSync(DB_PATH, JSON.stringify({ movies }, null, 2), 'utf8')
 }
@@ -29,15 +23,11 @@ export const movieService = {
         return
     },
 
-    create(movieData) {
-        const db = loadDB()
-
+   async create(movieData) {
+    
         const movie = new Movie(movieData);
 
-        db.movies.push(movie)
-
-        saveDB(db.movies)
-
+        await movie.save()
         return movie
 
     },
