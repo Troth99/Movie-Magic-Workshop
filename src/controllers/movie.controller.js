@@ -19,12 +19,13 @@ movieController.post('/movie/create', (req, res) => {
 
 })
 
-movieController.get('/search', (req, res) => {
-    const filter = req.query
+movieController.get('/search', async (req, res) => {
+    const searchKeys = req.query
 
-    const movies = movieService.filter(filter);
+    const movies = await movieService.getAll(searchKeys)
+   
 
-    res.render('search', { movies, ...filter })
+    res.render('search', {movies, ...searchKeys} )
 })
 
 movieController.get('/movies/:movieId/details', async (req, res) => {
