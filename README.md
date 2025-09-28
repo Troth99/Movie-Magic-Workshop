@@ -64,9 +64,12 @@ JS Back-end Movie Magic Workshop
 - [X] Refactor Movie Service to use Movie Model
 - [X] Fixed create movie to use Movie Service
 - [X] Added details page
-- [] Add Movie Controller
-- [] Render Movies on Home Page
-- [] Create Movie Page
+
+  ### Add Cast
+  - [X] Add cast resources
+  - [X] Add Cast Model
+  - [] Add Cast Service
+  - [] Add Cast Controller
 
   ### Bonuses
 
