@@ -67,9 +67,11 @@ JS Back-end Movie Magic Workshop
 
   ### Add Cast
   - [X] Add cast resources
-  - [X] Add Cast Model
-  - [] Add Cast Service
+  - [] Add Cast Model
+  - [] Add Cast Page
   - [] Add Cast Controller
+  - [] Add Cast Service
+  - [] Add cast functionallity
 
   ### Bonuses
 
