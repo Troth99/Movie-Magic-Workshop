@@ -7,7 +7,7 @@ import castController from "./controllers/castController.js"
 
 const routes = Router()
 
-routes.use(homeController)
+routes.use('/', homeController)
 routes.use(movieController)
 routes.use('/casts', castController)
 routes.use((req, res) => {

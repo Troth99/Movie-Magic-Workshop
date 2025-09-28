@@ -7,8 +7,6 @@ export const movieService = {
     async getAll(filter = {}) {
         let query =  Movie.find()
     
-        console.log(filter)
-
         if (filter.title) {
             query = query.find({ title: { $regex: filter.title, $options: 'i' } })
         }

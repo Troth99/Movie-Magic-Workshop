@@ -13,6 +13,6 @@ const movieSchema = new Schema({
     description: String
 })
 
-const Movie = model('Movie', movieSchema, 'top-movies');
+const Movie = model('Movie', movieSchema);
 
 export default Movie
