@@ -73,6 +73,12 @@ JS Back-end Movie Magic Workshop
 - [X] Add Cast Service
 - [X] Add cast functionallity
 
+### Attach Cast to Movie (relations)
+- [X] Add attach cast button
+- [] Add attach cast page
+- [] Add relation between cast and movie
+- [] Attach cast functionality
+
   ### Bonuses
 
   - [] envirment variables
