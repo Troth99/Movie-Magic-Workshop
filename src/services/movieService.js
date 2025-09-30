@@ -5,8 +5,8 @@ import Movie from "../models/Movie.model.js";
 export const movieService = {
 
     async getAll(filter = {}) {
-        let query =  Movie.find()
-    
+        let query = Movie.find()
+
         if (filter.title) {
             query = query.find({ title: { $regex: filter.title, $options: 'i' } })
         }
@@ -35,9 +35,14 @@ export const movieService = {
 
     },
 
+    async attach(movieId, castId) {
 
 
+        return Movie.findByIdAndUpdate(movieId, { $push: { casts: castId } })
 
+
+        
+    }
 
 }
 
