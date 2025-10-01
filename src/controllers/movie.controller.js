@@ -31,13 +31,13 @@ movieController.get('/search', async (req, res) => {
 
 movieController.get('/movies/:movieId/details', async (req, res) => {
     const movieId = req.params.movieId
-    const movie = await movieService.findById(movieId).lean();
+        const movie = await movieService.findById(movieId).populate('casts').lean();
 
-    const movieCast = await castService.getAll({includes: movie.casts}).lean()
+  
 
     const ratingViewData = '&#x2605'.repeat(Math.trunc(movie.rating))
 
-    res.render('details', { movie, rating: ratingViewData, casts: movieCast })
+    res.render('details', { movie, rating: ratingViewData, casts: movie.casts })
 
 
 })
