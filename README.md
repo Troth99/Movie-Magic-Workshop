@@ -79,9 +79,11 @@ JS Back-end Movie Magic Workshop
 - [X] Add dynamic movie data
 - [X] Show cast list in attach select
 - [x] Add relation between cast and movie
-- [] Attach cast functionality
+- [X] Attach cast functionality
 
 ### Show cast Details (populate)
+- [X] Get filtered cast list
+- [X] Show casts on details page
 
   ### Bonuses
 

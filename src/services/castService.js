@@ -2,11 +2,16 @@ import Cast from "../models/Cast.js"
 
 export default {
 
-    create(data){
+    create(data) {
         return Cast.create(data)
     },
 
-    getAll(){
-        return Cast.find()
+    getAll(filter = {}) {
+        let query = Cast.find();
+
+        if (filter.includes) {
+            query = query.where({ '_id': { $in: filter.includes } })
+        }
+        return query
     }
 }
