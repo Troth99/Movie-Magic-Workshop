@@ -91,8 +91,8 @@ JS Back-end Movie Magic Workshop
   - [X] Fix the movie rating
 
 ### Registration
-- [] Add new controller
-- [] Add registration page
-- [] Add user model
+- [x] Add new controller
+- [x] Add registration page
+- [X] Add user model
 - [] Add user service
 - [] Add registration functionality

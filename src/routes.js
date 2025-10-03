@@ -12,6 +12,8 @@ routes.use('/', homeController)
 routes.use(movieController)
 routes.use('/casts', castController)
 routes.use('/auth', authController)
+
+
 routes.use((req, res) => {
     res.status(404).render('404');
 })
