@@ -3,6 +3,7 @@ import { Router } from "express"
 import homeController from "./controllers/home.controller.js"
 import movieController from "./controllers/movie.controller.js"
 import castController from "./controllers/castController.js"
+import authController from "./controllers/authController.js"
 
 
 const routes = Router()
@@ -10,6 +11,7 @@ const routes = Router()
 routes.use('/', homeController)
 routes.use(movieController)
 routes.use('/casts', castController)
+routes.use('/auth', authController)
 routes.use((req, res) => {
     res.status(404).render('404');
 })

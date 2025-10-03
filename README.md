@@ -89,3 +89,10 @@ JS Back-end Movie Magic Workshop
 
   - [] envirment variables
   - [X] Fix the movie rating
+
+### Registration
+- [] Add new controller
+- [] Add registration page
+- [] Add user model
+- [] Add user service
+- [] Add registration functionality
