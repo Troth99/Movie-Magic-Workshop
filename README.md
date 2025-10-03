@@ -93,6 +93,6 @@ JS Back-end Movie Magic Workshop
 ### Registration
 - [x] Add new controller
 - [x] Add registration page
-- [X] Add user model
-- [] Add user service
+- [x] Add user model
+- [x] Add user service
 - [] Add registration functionality
