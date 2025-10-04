@@ -103,3 +103,4 @@ JS Back-end Movie Magic Workshop
 - [x] Handle login page
 - [x] Create token
 - [x] Add login functionality
+- [x] Return token to client
