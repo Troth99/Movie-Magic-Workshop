@@ -8,6 +8,7 @@ import mongoose from "mongoose";
 
 const app = express();
 
+mongoose.set('debug', true);
 //setup Database
 const url = 'mongodb://localhost:27017'
 
