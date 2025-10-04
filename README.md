@@ -96,4 +96,10 @@ JS Back-end Movie Magic Workshop
 - [x] Add user model
 - [x] Add user service
 - [x] Add registration functionality
-- [ ] Add password hashing `npm i bcrypt`
+- [x] Add password hashing `npm i bcrypt`
+
+### Login
+- [x] Add login page
+- [x] Add login functionality
+- [ ] Handle login page
+- [ ] Create token
