@@ -104,3 +104,18 @@ JS Back-end Movie Magic Workshop
 - [x] Create token
 - [x] Add login functionality
 - [x] Return token to client
+
+### Logout
+- [] Add logout route
+- [] Add logout functionality
+
+
+### Dynamic navigation
+- [x] Modify main layout
+
+### Edit movie
+
+### Delete movie
+
+### Bonus
+- [] Add auth middleware
