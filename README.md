@@ -100,6 +100,6 @@ JS Back-end Movie Magic Workshop
 
 ### Login
 - [x] Add login page
-- [x] Add login functionality
-- [ ] Handle login page
+- [x] Handle login page
 - [ ] Create token
+- [x] Add login functionality
