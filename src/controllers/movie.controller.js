@@ -1,17 +1,17 @@
 import { Router } from "express";
 import { movieService } from "../services/movieService.js";
 import castService from "../services/castService.js";
-
+import auth from "../middlewares/authMiddleware.js"
 
 const movieController = Router();
 
 
-movieController.get('/movie/create', (req, res) => {
+movieController.get('/movie/create', auth.isAuth, (req, res) => {
 
     res.render('create')
 });
 
-movieController.post('/movie/create', (req, res) => {
+movieController.post('/movie/create', auth.isAuth, (req, res) => {
 
     const movieData = req.body;
 

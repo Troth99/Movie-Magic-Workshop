@@ -109,9 +109,9 @@ JS Back-end Movie Magic Workshop
 - [x] Add logout functionality
 
 ### Authorization
-- [] install cookie parser `npm i cookie-parser`
-- [] Add auth middleware
-- [] Validate user authorization
+- [x] install cookie parser `npm i cookie-parser`
+- [x] Add auth middleware
+- [ ] Add route guard
 
 ### Dynamic navigation
 - [x] Modify main layout
