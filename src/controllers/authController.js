@@ -23,18 +23,23 @@ authController.get('/login', (req, res) => {
 
 authController.post('/login', async (req, res) => {
 
-    const {email, password} = req.body
+    const { email, password } = req.body
 
-   const token = await userService.login(email, password)
+    const token = await userService.login(email, password)
 
-   res.cookie('auth', token)
+    res.cookie('auth', token)
 
     res.redirect('/')
 })
 
 
 authController.get('/logout', (req, res) => {
+
     res.clearCookie('auth')
+
+    // BONUS: Invalidate JWT token
+
+
     res.redirect('/')
 
 })
