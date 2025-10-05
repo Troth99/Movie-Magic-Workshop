@@ -116,6 +116,8 @@ JS Back-end Movie Magic Workshop
 ### Dynamic navigation
 - [x] Modify main layout
 
+### Show buttons for movies
+
 ### Edit movie
 
 ### Delete movie
