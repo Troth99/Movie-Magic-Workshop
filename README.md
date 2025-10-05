@@ -111,7 +111,7 @@ JS Back-end Movie Magic Workshop
 ### Authorization
 - [x] install cookie parser `npm i cookie-parser`
 - [x] Add auth middleware
-- [ ] Add route guard
+- [x] Add route guard
 
 ### Dynamic navigation
 - [x] Modify main layout

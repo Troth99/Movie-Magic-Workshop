@@ -11,8 +11,13 @@ function authMiddleware(req, res, next) {
     try {
         const decodeToken = jwt.verify(token, JWT_SECRET)
 
+        // Attach authenticated user to request
         req.user = decodeToken;
         req.isAuthenticated = true
+
+        // Add to handlebars context
+        res.locals.isAuthenticated = true
+        res.locals.user = decodeToken
 
         next()
     } catch (error) {
@@ -31,9 +36,20 @@ function isAuth(req, res, next) {
     next()
 }
 
+function isGuest(req, res, next) {
+
+    if(req.isAuthenticated){
+        return res.redirect('/')
+    }
+
+    next()
+}
+
 export default {
     authMiddleware,
-    isAuth
+    isAuth,
+    isGuest
+
 }
 
 

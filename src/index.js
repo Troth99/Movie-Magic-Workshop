@@ -8,7 +8,8 @@ import auth from "./middlewares/authMiddleware.js";
 
 const app = express();
 
-mongoose.set('debug', true);
+// mongoose.set('debug', true);
+
 //setup Database
 const url = 'mongodb://localhost:27017'
 
