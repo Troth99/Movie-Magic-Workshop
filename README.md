@@ -106,8 +106,7 @@ JS Back-end Movie Magic Workshop
 - [x] Return token to client
 
 ### Logout
-- [] Add logout route
-- [] Add logout functionality
+- [x] Add logout functionality
 
 
 ### Dynamic navigation
