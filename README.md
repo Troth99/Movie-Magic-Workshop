@@ -122,6 +122,9 @@ JS Back-end Movie Magic Workshop
   - [ ] Show buttons only for creators
 
 ### Edit movie
+- [] Add edit page
+- [] Add edit action
+- [] Add owner validation
 
 ### Delete movie
 - [x] Add delete action
