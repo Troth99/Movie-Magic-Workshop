@@ -33,9 +33,9 @@ movieController.get('/search', async (req, res) => {
 
 movieController.get('/movies/:movieId/details', async (req, res) => {
     const movieId = req.params.movieId
-        const movie = await movieService.findById(movieId).populate('casts').lean();
+    const movie = await movieService.findById(movieId).populate('casts').lean();
 
-  
+
 
     const ratingViewData = '&#x2605'.repeat(Math.trunc(movie.rating))
 
@@ -68,6 +68,12 @@ movieController.post('/movies/:movieId/attach', async (req, res) => {
 
 movieController.get('/movies/:movieId/delete', auth.isAuth, async (req, res) => {
     const movieId = req.params.movieId;
+
+    const movie = await movieService.findById(movieId);
+
+    if (!movie.owner?.equals(req.user.id)) {
+        return res.redirect('/')
+    }
 
     await movieService.delete(movieId)
 

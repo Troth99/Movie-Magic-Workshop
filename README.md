@@ -124,7 +124,8 @@ JS Back-end Movie Magic Workshop
 ### Edit movie
 
 ### Delete movie
-- [] Add delete action
+- [x] Add delete action
+- [x] Add owner validation
 
 ### Bonus
 - [] Add auth middleware
