@@ -118,6 +118,7 @@ JS Back-end Movie Magic Workshop
 
 ### Show buttons for movies
   - [x] Add edit and delete buttons
+  - [x] Add isOwner as relation to movie
   - [ ] Show buttons only for creators
 
 ### Edit movie

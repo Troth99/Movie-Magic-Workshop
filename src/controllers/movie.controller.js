@@ -14,8 +14,9 @@ movieController.get('/movie/create', auth.isAuth, (req, res) => {
 movieController.post('/movie/create', auth.isAuth, (req, res) => {
 
     const movieData = req.body;
+    const ownerId = req.user.id
 
-    movieService.create(movieData)
+    movieService.create(movieData, ownerId)
 
     res.redirect('/')
 
@@ -37,6 +38,8 @@ movieController.get('/movies/:movieId/details', async (req, res) => {
   
 
     const ratingViewData = '&#x2605'.repeat(Math.trunc(movie.rating))
+
+    // const isOwner = 
 
     res.render('details', { movie, rating: ratingViewData, casts: movie.casts })
 

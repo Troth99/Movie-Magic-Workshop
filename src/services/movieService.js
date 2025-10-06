@@ -26,8 +26,10 @@ export const movieService = {
         return Movie.findById(movieId)
     },
 
-    async create(movieData) {
+    async create(movieData, ownerId) {
 
+        movieData.owner = ownerId
+        
         const movie = new Movie(movieData);
 
         await movie.save()
