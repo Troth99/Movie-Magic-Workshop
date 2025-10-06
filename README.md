@@ -117,6 +117,8 @@ JS Back-end Movie Magic Workshop
 - [x] Modify main layout
 
 ### Show buttons for movies
+  - [x] Add edit and delete buttons
+  - [ ] Show buttons only for creators
 
 ### Edit movie
 
