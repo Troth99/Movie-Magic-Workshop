@@ -66,5 +66,12 @@ movieController.post('/movies/:movieId/attach', async (req, res) => {
     res.redirect(`/movies/${movieId}/details`)
 })
 
+movieController.get('/movies/:movieId/delete', auth.isAuth, async (req, res) => {
+    const movieId = req.params.movieId;
+
+    await movieService.delete(movieId)
+
+    res.redirect('/')
+})
 export default movieController;
 

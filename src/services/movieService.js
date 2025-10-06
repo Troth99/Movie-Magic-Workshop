@@ -29,7 +29,7 @@ export const movieService = {
     async create(movieData, ownerId) {
 
         movieData.owner = ownerId
-        
+
         const movie = new Movie(movieData);
 
         await movie.save()
@@ -41,9 +41,11 @@ export const movieService = {
 
 
         return Movie.findByIdAndUpdate(movieId, { $push: { casts: castId } })
-
-
         
+    },
+
+    delete(movieId){
+        return Movie.findByIdAndDelete(movieId)
     }
 
 }
