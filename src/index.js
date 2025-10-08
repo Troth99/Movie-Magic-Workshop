@@ -26,6 +26,9 @@ try {
 //setup Handlebars
 app.engine('hbs', handlebars.engine({
     extname: 'hbs',
+    helpers: {
+        eq: (a,b) => a === b
+    }
 }));
 
 app.set('view engine', 'hbs');
