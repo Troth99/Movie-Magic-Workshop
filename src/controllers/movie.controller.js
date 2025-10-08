@@ -88,7 +88,9 @@ movieController.get('/movies/:movieId/edit', async (req, res) => {
 
     const movie = await movieService.findById(movieId).lean()
 
-    res.render('edit', { movie })
+    const categoriesViewData = getMovieCategoryData(movie.category)
+
+    res.render('edit', { movie, categories: categoriesViewData })
 })
 
 
@@ -101,5 +103,21 @@ movieController.post('/movies/:movieId/edit', async (req, res) => {
     res.redirect(`/movies/${movieId}/details`)
 
 })
+
+
+function getMovieCategoryData(selectedCategory) {
+    const categories = [
+        { value: 'tv-show', label: 'TV Show' },
+        { value: 'animation', label: 'Animation' },
+        { value: 'Movie', label: 'Movie' },
+        { value: 'documentary', label: 'Documentary' },
+        { value: 'short-film', label: 'Short Film' },
+    ];
+
+
+    const viewData = categories.map(category => ({ ...category, selected: selectedCategory === category.value ? 'selected' : '' }))
+
+    return viewData
+}
 export default movieController;
 
