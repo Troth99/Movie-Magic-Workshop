@@ -122,7 +122,7 @@ JS Back-end Movie Magic Workshop
   - [ ] Show buttons only for creators
 
 ### Edit movie
-- [] Add edit page
+- [X] Add edit page
 - [] Add edit action
 - [] Add owner validation
 
