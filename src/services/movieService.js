@@ -46,6 +46,10 @@ export const movieService = {
 
     delete(movieId){
         return Movie.findByIdAndDelete(movieId)
+    },
+
+    editMovie(movieId, movieData){
+        return Movie.findByIdAndUpdate(movieId, movieData)
     }
 
 }

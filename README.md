@@ -123,7 +123,7 @@ JS Back-end Movie Magic Workshop
 
 ### Edit movie
 - [X] Add edit page
-- [] Add edit action
+- [x] Add edit action
 - [] Add owner validation
 
 ### Delete movie

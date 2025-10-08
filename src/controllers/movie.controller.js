@@ -88,8 +88,18 @@ movieController.get('/movies/:movieId/edit', async (req, res) => {
 
     const movie = await movieService.findById(movieId).lean()
 
-    console.log(movie.title)
     res.render('edit', { movie })
+})
+
+
+movieController.post('/movies/:movieId/edit', async (req, res) => {
+    const movieData = req.body;
+    const movieId = req.params.movieId
+
+    await movieService.editMovie(movieId, movieData)
+
+    res.redirect(`/movies/${movieId}/details`)
+
 })
 export default movieController;
 
