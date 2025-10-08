@@ -132,3 +132,4 @@ JS Back-end Movie Magic Workshop
 
 ### Bonus
 - [] Add auth middleware
+- [x] Auto login on registration

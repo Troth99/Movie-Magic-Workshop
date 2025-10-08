@@ -13,9 +13,11 @@ authController.get('/register', auth.isGuest, (req, res) => {
 authController.post('/register', auth.isGuest, async (req, res) => {
     const userData = req.body;
 
-    await userService.register(userData)
+    const token = await userService.register(userData)
 
-    res.redirect('/auth/login')
+    res.cookie('auth', token)
+
+    res.redirect('/')
 });
 
 authController.get('/login', auth.isGuest, (req, res) => {
