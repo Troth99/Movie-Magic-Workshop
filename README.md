@@ -133,3 +133,9 @@ JS Back-end Movie Magic Workshop
 ### Bonus
 - [] Add auth middleware
 - [x] Auto login on registration
+
+### 4 Workshop - validations and error handling
+  -[x] Validate movie and cast
+  -[] Validate user
+  -[] Add error display to the views
+  -[] Add error handling middleware
