@@ -137,5 +137,5 @@ JS Back-end Movie Magic Workshop
 ### 4 Workshop - validations and error handling
   -[x] Validate movie and cast
   -[x] Validate user
-  -[] Add error display to the views
-  -[] Add error handling middleware
+  -[x] Add error display to the views
+  -[x] Remder errror container conditionally
