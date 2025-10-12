@@ -23,7 +23,7 @@ authController.post('/register', auth.isGuest, async (req, res) => {
 
     } catch (error) {
         const errorMessage = Object.values(error.errors).at(0).message
-        res.status(400).render('auth/register', {error: errorMessage})
+        res.status(400).render('auth/register', {error: errorMessage, user: userData})
     }
 });
 
