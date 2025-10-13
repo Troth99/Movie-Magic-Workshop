@@ -139,3 +139,7 @@ JS Back-end Movie Magic Workshop
   -[x] Validate user
   -[x] Add error display to the views
   -[x] Remder errror container conditionally
+
+### Login
+- [x] Add error handling to login
+- [x] Show error messages in login page

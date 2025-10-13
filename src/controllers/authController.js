@@ -1,6 +1,7 @@
 import { Router } from "express";
 import userService from "../services/userService.js";
 import auth from '../middlewares/authMiddleware.js'
+import { getErrorMessage } from "../utils/errorUtils.js";
 
 
 const authController = Router();
@@ -22,12 +23,9 @@ authController.post('/register', auth.isGuest, async (req, res) => {
         res.redirect('/')
 
     } catch (error) {
-        let errorMessage = error.message
 
-        if (error.name === 'ValidationError') {
-            errorMessage = Object.values(error.errors).at(0).message
+        const errorMessage = getErrorMessage(error)
 
-        }
         res.status(400).render('auth/register', { error: errorMessage, user: userData })
     }
 });
@@ -38,13 +36,22 @@ authController.get('/login', auth.isGuest, (req, res) => {
 
 authController.post('/login', auth.isGuest, async (req, res) => {
 
-    const { email, password } = req.body
+    try {
 
-    const token = await userService.login(email, password)
+        const { email, password } = req.body
 
-    res.cookie('auth', token)
+        const token = await userService.login(email, password)
 
-    res.redirect('/')
+        res.cookie('auth', token)
+
+        res.redirect('/')
+
+    } catch (error) {
+        const errorMessage = getErrorMessage(error)
+
+        res.status(400).render('auth/login', { error: errorMessage, user: { email: req.body?.email || '' } })
+    }
+
 })
 
 
