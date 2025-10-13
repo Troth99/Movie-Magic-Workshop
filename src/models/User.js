@@ -8,7 +8,7 @@ const userSchema = new Schema({
         type: String,
         required: [true, 'User email is required!'],
         unique: [true, 'Email should be unique!'],
-        match: [/[a-zA-Z0-9]+\.[a-zA-Z0-9]+$/],
+        match: [/[a-zA-Z0-9]+\.[a-zA-Z0-9]+$/, 'Email is invalid!'],
         minLenght: [10, 'Email should be at least 10 characters long!']
     },
     password: {
@@ -19,7 +19,7 @@ const userSchema = new Schema({
     }
 });
 
-userSchema.pre('save', async function() {
+userSchema.pre('save', async function () {
     this.password = await bcrypt.hash(this.password, 12)
 })
 const User = model('User', userSchema)
